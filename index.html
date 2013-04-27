@@ -9,19 +9,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-38721366-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 
 </head>
 <body>
@@ -100,7 +87,7 @@
     var numInOneScreen = Math.floor(menu3Width / 220) * Math.ceil(document.height / 250); // menu3 li width
     var numInView = numInOneScreen;
 
-    d3.csv('https://docs.google.com/spreadsheet/pub?key=0AqMEGBUNwXeHdHpQNlVuY29SUE5BSXVtS3JueGlNYVE&single=true&gid=0&output=csv', function(error, _json){
+    d3.csv('https://docs.google.com/spreadsheet/pub?key=0AovoNzJt5GetdEhQVDgyYXpJMnZ2M2J2YmtvX0I5Snc&output=csv', function(error, _json){
 //    d3.csv('d3gallery_feb282013.csv', function(error, _json){
         json = _json;
         buildList(dataTransformMenu1(), '.menu1-container', data1);
